@@ -23,8 +23,8 @@ function Navbar() {
             <nav className="hidden md:flex">
             <ul className="flex items-center space-x-4">
                 <li><a href="#">Find Therapists</a></li>
-                <li><Button className="secondary">Log In</Button></li>
-                <li><Button className="secondary">Sign In</Button></li>
+                <li><Button variant="outline">Log In</Button></li>
+                <li><Button variant="primary">Sign In</Button></li>
             </ul>
             </nav>
 
@@ -33,7 +33,7 @@ function Navbar() {
                 <ul className="flex flex-col space-y-2">
                 <li><a href="#">Find Therapists</a></li>
                 <li><Button variant="outline">Log In</Button></li>
-                <li><Button className="primary">Sign In</Button></li>
+                <li><Button variant="primary">Sign In</Button></li>
                 </ul>
             </nav>
             )}
