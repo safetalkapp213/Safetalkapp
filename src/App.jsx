@@ -1,11 +1,14 @@
-import React from 'react'
+
+import React from 'react';
+import SignupPage from './components/SignupPage.jsx';
 
 function App() {
   return (
-    <div>
-    
-    </div>
-  )
+    <div className="App">
+      <SignupPage />
+      </div>
+  );
+  
 }
 
-export default App
+export default App;
