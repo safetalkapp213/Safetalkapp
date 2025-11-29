@@ -1,13 +1,8 @@
-import React from 'react'
-import LandingPage from "./components/LandingPage.jsx"
-
+// App.jsx
+import BookingPage from './components/BookingPageOne'
 
 function App() {
-  return (
-    <div>
-      <LandingPage />
-    </div>
-  )
+  return <BookingPage />
 }
 
 export default App

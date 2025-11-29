@@ -1,0 +1,15 @@
+/* src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  line-height: 1.5;
+}
+
+.App {
+  min-height: 100vh;
+}
