@@ -47,3 +47,17 @@ export const profile = {
   avatar: "https://i.pravatar.cc/96?u=olayin",
 };
 
+export const bookingSummary = {
+  date: "20/11/2025",
+  time: "4:00 PM",
+  duration: "50 minutes",
+  amount: 200,
+};
+
+export const selectedTherapist = {
+  name: "Dr. Bello Afifi",
+  experience: "10+ years",
+  price: "$ 200/Session",
+  specializations: "Anxiety, Depression, Stress Management",
+  avatar: "https://i.pravatar.cc/96?u=bello-afifi", // any avatar url is fine
+}
