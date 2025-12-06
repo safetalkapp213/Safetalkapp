@@ -1,12 +1,12 @@
-import React from 'react'
-import Testing from './components/Testing'
+ import React from 'react';
+import TherapistProfile from './components/TherapistProfile';
 
 function App() {
   return (
-    <>
-  Hello gbogboyin
-    </>
-  )
+    <div className="App">
+      <TherapistProfile />
+    </div>
+  );
 }
 
-export default App
+export default App;
