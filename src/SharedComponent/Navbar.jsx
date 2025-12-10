@@ -2,6 +2,7 @@
     import logo from "../assets/safetalk-logo.png";
     import menu from "../assets/menu.svg";
     import Button from "./Button";
+    import { Link } from "react-router-dom";
 
     function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,23 +37,29 @@
         <header
         className={`
             fixed top-0 left-0 right-0 z-50 transition-all duration-300
-            ${isScrolled ? "bg-gray-100 shadow-md py-2" : "bg-transparent py-4"}
+            ${isScrolled ? "bg-gradient-to-l from-green-200 to-blue-300 shadow-md py-2" : "bg-transparent py-4"}
         `}
         >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
             {/* Logo */}
-            <img src={logo} alt="SafeTalk Logo" className="h-10 w-auto" />
+            <img src={logo} alt="SafeTalk Logo" className="h-[60px] w-auto" />
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center gap-6">
             <a
                 href="#"
-                className="hover:text-blue-600 transition-colors text-lg font-medium"
+                className="hover:text-green-600 transition-colors text-lg font-medium"
             >
                 Find Therapists
             </a>
-            <Button variant="outline">Log In</Button>
-            <Button variant="primary">Sign Up</Button>
+            <Link to="/login">
+    <Button variant="outline">Log In</Button>
+    </Link>
+
+    <Link to="/signup">
+    <Button variant="primary">Sign Up</Button>
+    </Link>
+
             </nav>
 
             {/* Mobile Button */}
@@ -76,23 +83,21 @@
                 <li className="text-center">
                 <a
                     href="#"
-                    className="block py-2 text-lg hover:text-blue-600 transition font-medium"
+                    className="block py-2 text-lg hover:text-green-600 transition font-medium"
                     onClick={() => setIsOpen(false)}
                 >
                     Find Therapists
                 </a>
                 </li>
 
-                <li>
-                <Button variant="outlineLg" onClick={() => setIsOpen(false)}>
-                    Log In
-                </Button>
-                </li>
-                <li>
-                <Button variant="primaryLg" onClick={() => setIsOpen(false)}>
-                    Sign Up
-                </Button>
-                </li>
+                <Link to="/login">
+    <Button variant="outline">Log In</Button>
+    </Link>
+
+    <Link to="/signup">
+    <Button variant="primary">Sign Up</Button>
+    </Link>
+
             </ul>
             </nav>
         </div>

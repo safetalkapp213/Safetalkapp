@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../SharedComponent/Button.jsx";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className="bg-primary text-black py-16 px-6 md:px-12">
+    <section className="bg-gradient-to-r from-green-400 to-blue-500 text-black py-16 px-6 md:px-12">
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center space-y-6">
         <h2 className="text-3xl md:text-4xl font-extrabold">
           Ready to Take the First Steps?
@@ -11,9 +12,11 @@ const CTA = () => {
         <p className="text-lg md:text-xl leading-relaxed">
           Join thousands of people who have found support and healing through SafeTalk.
         </p>
-        <Button variant="secondary" className="px-8 py-3 text-lg">
-          Sign Up Now
-        </Button>
+
+<Link to="/signup">
+  <Button variant="secondary">Sign Up Now</Button>
+</Link>
+
       </div>
     </section>
   );

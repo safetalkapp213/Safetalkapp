@@ -1,10 +1,11 @@
 import React from "react";
 import heroImage from "../assets/image.png";
 import Button from "../SharedComponent/Button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center bg-lightGreen py-16 md:py-24 w-full px-6 md:px-12">
+    <section className="flex flex-col-reverse md:flex-row items-center bg-green-50 py-16 md:py-24 w-full px-6 md:px-12">
       
       {/* Hero Text */}
       <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
@@ -19,8 +20,12 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <Button variant="primary">Find A Therapist</Button>
-          <Button variant="secondary">Get Started</Button>
+    <Link to="/login">
+    <Button variant="primary">Find A Therapist</Button>
+    </Link>
+    <Link to="/signup">
+    <Button variant="secondary">Get Started</Button>
+    </Link>
         </div>
       </div>
 
