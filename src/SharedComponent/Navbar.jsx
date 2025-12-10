@@ -37,7 +37,7 @@
         <header
         className={`
             fixed top-0 left-0 right-0 z-50 transition-all duration-300
-            ${isScrolled ? "bg-gradient-to-l from-green-200 to-blue-300 shadow-md py-2" : "bg-transparent py-4"}
+            ${isScrolled ? "bg-gradient-to-l from-green-200 to-orange-300 shadow-md py-2" : "bg-transparent py-4"}
         `}
         >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4">

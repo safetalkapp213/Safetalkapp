@@ -43,7 +43,7 @@ function StepsCard() {
               )}
 
               {/* Step Circle */}
-              <div className="rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white w-16 h-16 flex items-center justify-center mb-4 text-2xl font-bold shadow-lg transition-transform duration-300 group-hover:scale-110 z-10">
+              <div className="rounded-full bg-gradient-to-r from-green-600 to-orange-500 text-white w-16 h-16 flex items-center justify-center mb-4 text-2xl font-bold shadow-lg transition-transform duration-300 group-hover:scale-110 z-10">
                 {step.number}
               </div>
 
