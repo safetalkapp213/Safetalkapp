@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import bg from "../assets/background.png";
 import logo from "../assets/safetalk-logo.png";
+import Button from "../SharedComponent/Button";
 
 
 
@@ -29,7 +30,7 @@ const Login = () => {
       />
       <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
 
-      {/* Login Card */}
+    
       <div className="relative z-10 w-full max-w-md bg-white/30 backdrop-blur-md rounded-3xl shadow-lg p-6 sm:p-10 text-center">
         {/* Logo */}
         <img src={logo} alt="SafeTalk Logo" className="w-16 mx-auto mb-2" />
@@ -56,12 +57,9 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             className="w-full mb-6 px-4 py-3 rounded-3xl bg-white/50 backdrop-blur-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-600"
           />
-          <button
-            type="submit"
-            className="w-full py-3 bg-teal-700 hover:bg-teal-800 text-white font-semibold rounded-full transition"
-          >
+          <Button type="submit" variant="primary" className="w-full py-3 rounded-3xl">
             Log In
-          </button>
+          </Button>
         </form>
 
         <p className="text-sm mt-3 cursor-pointer hover:underline">

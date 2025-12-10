@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import bg from "../assets/background.png";
 import logo from "../assets/safetalk-logo.png"
+import Button from "../SharedComponent/Button";
+
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -39,12 +41,9 @@ const ForgotPassword = () => {
             onChange={(e) => setEmail(e.target.value)}
             className="w-full mb-4 px-4 py-3 rounded-3xl bg-white/50 backdrop-blur-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-600"
           />
-          <button
-            type="submit"
-            className="w-full py-3 bg-teal-700 text-white rounded-full font-semibold hover:bg-teal-800 transition"
-          >
+          <Button type="submit" variant="primary" className="w-full py-3 rounded-3xl">
             Reset Password
-          </button>
+          </Button>
         </form>
 
 <div className="mt-6 flex justify-center gap-6 text-sm text-gray-900">

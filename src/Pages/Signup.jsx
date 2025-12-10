@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import backgroundImage from "../assets/safetalk-background.png";
 import logo from "../assets/safetalk-logo.png";
+import Button from "../SharedComponent/Button";
+
+
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -158,12 +161,9 @@ export default function Signup() {
           )}
 
           {/* Submit */}
-          <button
-            type="submit"
-            className="w-full py-4 bg-teal-700 hover:bg-teal-800 text-white font-bold rounded-xl transition text-base sm:text-lg shadow-lg"
-          >
-            Sign Up
-          </button>
+          <Button type="submit" variant="primary" className="w-full py-3 rounded-3xl">
+                      Submit
+                    </Button>
         </form>
 
         {/* Navigation Links */}

@@ -34,7 +34,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Therapist talking to a patient"
-          className="rounded-xl shadow-xl w-full max-w-md md:max-w-full"
+          className="rounded-xl rounded-tl-[150px] rounded-br-[150px] shadow-xl w-full max-w-md md:max-w-full"
         />
       </div>
     </section>
