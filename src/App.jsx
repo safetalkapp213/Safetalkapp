@@ -1,17 +1,24 @@
 
+import { useState } from 'react'
+import Booking from './Components/Booking'
+import './App.css'
 
-import Login from './Components/Login'
+
 
 
 function App() {
- 
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Login />
-       
+    
+     < Booking/>
+      
+   
+      
     </>
   )
 }
 
 export default App
+ 
