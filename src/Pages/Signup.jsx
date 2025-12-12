@@ -161,9 +161,11 @@ export default function Signup() {
           )}
 
           {/* Submit */}
-          <Button type="submit" variant="primary" className="w-full py-3 rounded-3xl">
-                      Submit
-                    </Button>
+          <Link to="/homepage">
+          <Button variant="primary" className="w-full py-3 rounded-3xl">
+            Sign up
+          </Button>
+        </Link>
         </form>
 
         {/* Navigation Links */}

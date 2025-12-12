@@ -57,9 +57,12 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             className="w-full mb-6 px-4 py-3 rounded-3xl bg-white/50 backdrop-blur-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-600"
           />
-          <Button type="submit" variant="primary" className="w-full py-3 rounded-3xl">
+          <Link to="/homepage">
+          <Button variant="primary" className="w-full py-3 rounded-3xl">
             Log In
           </Button>
+        </Link>
+
         </form>
 
         <p className="text-sm mt-3 cursor-pointer hover:underline">
