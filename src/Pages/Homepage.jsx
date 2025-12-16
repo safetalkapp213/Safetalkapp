@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
+import NavbarD from "../components/NavbarD";
 import SummaryCard from "../components/SummaryCard";
 import Tabs from "../components/Tabs";
 import SessionCard from "../components/SessionCard";
 import CTABox from "../components/CTABox";
 import ProfileSettings from "../components/ProfileSettings";
-import { upcoming, past, profile as mockProfile } from "../data/mockSessions"; // <-- alias here
+import { upcoming, past, profile as mockProfile } from "../data/mockSessions";
 import home_bg from "../assets/home_bg.png";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
       className="min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${home_bg})` }}
     >
-      <Navbar />
+      <NavbarD />
 
       <main className="mx-auto w-full max-w-[1200px] xl:max-w-[1320px] px-3 md:px-4 lg:px-5 py-6">
         {/* Header */}
